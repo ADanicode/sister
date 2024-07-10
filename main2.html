@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+<style>
+    .buttonn {
+        --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        cursor: pointer;
+        color: white;
+        padding: 1em 2em;
+        transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+            letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+        box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+    }
+
+    .buttonn:hover {
+        box-shadow: var(--hover-shadows);
+    }
+
+    .buttonn:active {
+        box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+        background-color: var(--accent);
+        transform: scale(0.95);
+    }
+</style>
+
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>o</span>
+        <span>l</span>
+        <span>a</span>
+        <span>💖</span>
+        <br>
+        <span>!</span>
+        <span>L</span>
+        <span>i</span>
+        <span>l</span>
+        <span>i</span>
+        <span>!</span>
+    </div>
+    <div class="description">
+        <span>Te tengo una sorpresa mira 💖😊</span>
+    </div>
+    <div class="button">
+        <button class="buttonn">
+            <a href="flower.html" style="color: #fff;">continuar</a>
+        </button>
+    </div>
+
+    <!-- Créditos -->
+    <div class="credits">
+        <p>&copy; 2023 Aprende Con JS.</p>
+    </div>
+</body>
+
+</html>
